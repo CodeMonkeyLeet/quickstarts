@@ -16,6 +16,7 @@ on:
     branches:
       - master
       - release-*
+  workflow_dispatch:
 jobs:
   deploy:
     name: Validate ${{ matrix.quickstart }}/README.md on ${{ matrix.os }}
